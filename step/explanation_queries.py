@@ -131,7 +131,7 @@ def primes_by_length(primes,pmgr,var_count):
     return by_length
 
 def run_prime_implicant_query(alpha, mgr, num_features, models_list):
-    print num_features, models_list
+    #print num_features, models_list
     for model_list in models_list:
         gamma,pmgr,pvtree2 = primes_given_term(alpha,model_list,mgr,_primes_one_given_term)
         pvtree = sdd.sdd_manager_vtree(pmgr)
@@ -149,7 +149,7 @@ def run_prime_implicant_query(alpha, mgr, num_features, models_list):
         
         print "Model: " + str(model_list) + ""
         print "PI explanations:"
-        for pi in pi_str:
+        for pi in pi_str[:3]:
           print str(pi)
 
         sdd.sdd_vtree_free(pvtree2)
