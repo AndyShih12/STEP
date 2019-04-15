@@ -1,11 +1,4 @@
-First, edit the run_explanations.py file to read in the sdd and 
-vtree files (under datasets), and indicate the models you would
-like to explain (under models_list). Change MODEL_INDEX accordingly.
-
-To run explanation queries:
-  cd sddexplanations
-  python run_explanations.py
-
+TODO
 
 email: Andy Shih <andyshih@ucla.edu>
        Arthur Choi <aychoi@cs.ucla.edu> 
