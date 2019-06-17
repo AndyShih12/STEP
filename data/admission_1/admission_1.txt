@@ -1,9 +1,0 @@
-num_variables: 4
-name: FirstTimeApplicant
-metadata: none
-name: EntranceExam
-metadata: none
-name: WorkExperience
-metadata: none
-name: GPA
-metadata: none

@@ -5,11 +5,11 @@ def read_json(filename):
     config_json = json.load(f)
 
   # add str() to convert from unicode to ascii
-  dataset = config_json["dataset"]
+  name = config_json["name"]
 
-  config_json["sdd_filename"] = str(config_json["sdd_filename"] % (dataset, dataset))
-  config_json["vtree_filename"] = str(config_json["vtree_filename"] % (dataset, dataset))
-  config_json["variable_description_filename"] = str(config_json["variable_description_filename"] % (dataset, dataset))
+  config_json["sdd_filename"] = str(config_json["sdd_filename"] % (name, name))
+  config_json["vtree_filename"] = str(config_json["vtree_filename"] % (name, name))
+  config_json["variable_description_filename"] = str(config_json["variable_description_filename"] % (name, name))
 
   # json_string = json.dumps(config_json, indent=2, sort_keys=True)
   # json_string += "\n"

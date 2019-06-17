@@ -30,7 +30,11 @@ def run():
     variable_description = f.readlines()
   num_features = int(variable_description[0].strip().split(" ")[1])
 
+  # can specify custom instances by doing
+  # model_list = [[0,0,0,0],[0,0,0,1],[0,0,1,0],...]
+  # enumerate a few positive instances from alpha
   model_list = get_model_list(alpha, vtree, 10)
+  
 
   PI(alpha, mgr, num_features, model_list)
 
