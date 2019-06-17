@@ -24,7 +24,7 @@ the vtree file should be located at ```config["vtree_filename"]```,
 the variable description file should be located at ```config["variable_description_filename"]```.
 
 
-For example, if ```config["name"] = "admission_1"``` and ```config["sdd_filename"] = "data/%s/%s.sdd"``` then the SDD file should be located at ```"data/admission_1/admission_1.sdd"```.
+For example, if ```config["name"] = "admission_1"``` and ```config["sdd_filename"] = "sdd/%s/%s.sdd"``` then the SDD file should be located at ```"sdd/admission_1/admission_1.sdd"```.
 
 ### Output Format
 
