@@ -1,4 +1,11 @@
 #!/bin/bash
 
 ulimit -s 100000
-python step/expl.py
+
+mkdir -p working/
+
+RAW_CONFIG_FILE="config.json"
+CONFIG_FILE="working/config_minify.json"
+
+python src/utils/config_minify.py ${RAW_CONFIG_FILE} ${CONFIG_FILE}
+python src/expl.py ${CONFIG_FILE}

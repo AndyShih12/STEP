@@ -1,0 +1,8 @@
+{
+  "dataset": "admission_1",
+
+  // comment
+  "sdd_filename": "data/%s/%s.sdd",
+  "vtree_filename": "data/%s/%s.vtree",
+  "variable_description_filename": "data/%s/%s.txt" 
+}
